@@ -373,7 +373,9 @@ Slicers: Category and Genre. Visuals: Top 5 installs by category, Top 10 install
 
 ### Q21. Top 10 highest-rated apps: how do reviews and installs compare?
 
-**Answer:** <img width="600" height="400" alt="Screenshot 2026-09-26 235345" src="https://github.com/user-attachments/assets/f9b2163e-8228-43a1-975e-1e3034fccfda" />
+**Answer:** 
+<img width="430" height="306" alt="image" src="https://github.com/user-attachments/assets/9deb590d-45e2-4e2a-adf5-7c63e6fa84f8" />
+
 
 ---
 
