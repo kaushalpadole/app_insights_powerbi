@@ -250,9 +250,7 @@ Slicers: Category and Genre. Visuals: Top 5 installs by category, Top 10 install
 
 ### Q10. How many apps were last updated in 2018?
 
-**Answer:** About **5,446 apps (~66.5% of the dataset)** were last updated in 2018.
-
-<img width="600" height="400" alt="Screenshot 2026-09-27 005511" src="https://github.com/user-attachments/assets/900295e7-7e8e-4821-aeec-a3548e3e5ac5" />
+**Answer:** 6,272 apps updated in 2018. This is a count of app records with a 2018 last-updated date, not the number of update events during the yr.
 
 
 **Insight:** Two-thirds of the market was updated in the latest year of the data, so regular maintenance is the norm. An app that goes stale will look neglected next to its competitors.
@@ -377,8 +375,7 @@ Slicers: Category and Genre. Visuals: Top 5 installs by category, Top 10 install
 
 ### Q22. Trend of app updates over time: any patterns?
 
-**Answer:**
-<img width="600" height="400" alt="Screenshot 2026-09-27 005511" src="https://github.com/user-attachments/assets/e4832c8a-c92a-4982-b524-0b186add6bac" />
+**Answer:** The annual counts rise sharply, from 1 in 2010 to approximately 6.3K in 2018; the most pronounced increases occur in 2017 and 2018.
 
 
 **Insight:** The curve is **exponential**, with a huge jump in 2018. This reflects when the data was collected (apps naturally show a recent last-updated date) and an actively maintained app market. Because only the latest update is stored, true seasonality cannot be proven. Drill down to Quarter/Month for the pattern within 2018.
