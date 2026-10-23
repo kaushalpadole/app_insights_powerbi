@@ -211,9 +211,7 @@ Slicers: Category and Genre. Visuals: Top 5 installs by category, Top 10 install
 
 ### Q6. What are the top 5 most installed apps?
 
-**Answer:** 
-
-**Insight:** Apps in the 1bn+ bucket are the benchmarks for marketing and retention strategy.
+**Answer:** The table lists Facebook, WhatsApp Messenger, Instagram, Messenger – Text and Video Chat for Free, and Subway Surfers. Each is displayed as having 1B installs.
 
 ---
 
@@ -226,9 +224,7 @@ Slicers: Category and Genre. Visuals: Top 5 installs by category, Top 10 install
 
 ### Q8. What is the average number of reviews for free vs paid apps?
 
-**Answer:**
-<img width="271" height="187" alt="image" src="https://github.com/user-attachments/assets/6b7de4f6-9b94-43a8-971c-81832e1a2952" />
-
+**Answer:** The table reports 234.4K average reviews for free apps and 6.68.8K average reviews for paid apps.
 
 ---
 
