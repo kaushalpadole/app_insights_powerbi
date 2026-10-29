@@ -17,10 +17,9 @@ impact of app size and price on user reviews and installs.
 4. [Data Cleaning & Preprocessing](#-data-cleaning--preprocessing)
 5. [Data Model & DAX Measures](#-data-model--dax-measures)
 6. [Dashboard Overview](#-dashboard-overview)
-7. [Basic-Level Questions (Q1–Q10)](#-basic-level-questions)
-8. [Medium-Level Questions (Q11–Q20)](#-medium-level-questions)
-9. [Advanced-Level Questions (Q21–Q25)](#-advanced-level-questions)
-10. [Key Recommendations](#-key-recommendations)
+7. [Key Insights](#-key-insights).
+8. [Key Recommendations](#-key-recommendations)
+9. [Challenges Faced](#-challenges-faced).
 
 ---
 
@@ -159,11 +158,65 @@ Slicers: Category and Genre. Visuals: Top 5 installs by category, Top 10 install
 
 
 ---
+## Key Insights
 
+### 1. Games Lead in Total Installs
 
+The analysis identifies Game as the leading category by total installs, followed by Communication and Tools.
 
+Insight: These categories represent substantial user demand in the dataset.
 
-**Insight:** Entertainment and creative genres (Music, Strategy, Puzzle, Comics) are consistently rated highest, and mean and median agree. Communication, Books & Reference and Lifestyle sit lowest. Comics' very high score likely rests on a small number of apps, so treat it with caution.
+Business implication: An app-development company should investigate successful applications in these categories before deciding where to invest development and marketing resources.
+
+### 2. Free Applications Dominate the Dataset
+
+Approximately 92.66% of applications in the original dashboard report are free, compared with 7.34% paid applications.
+
+Insight: Free applications account for the overwhelming majority of listed apps.
+
+Business implication: A free-to-use offering supported by advertising or optional in-app purchases may be worth testing, depending on the target audience and business model.
+
+### 3. High Ratings Do Not Automatically Mean High Popularity
+
+Some applications receive very high ratings despite having relatively few reviews or installs.
+
+Insight: Rating measures user feedback, while installs and reviews provide different perspectives on popularity and engagement.
+
+Business implication: App performance should be evaluated using several metrics rather than ratings alone.
+
+### 4. Ratings Vary Across Categories and Genres
+
+The analysis shows differences in average and median ratings across application categories and genres.
+
+Insight: User satisfaction is not uniform across all types of applications.
+
+Business implication: Developers should investigate the features, usability, and audience expectations associated with highly rated applications in their target category.
+
+### 5. Application Price Does Not Guarantee Higher Ratings
+
+The price-versus-rating analysis does not establish a consistent relationship in which more expensive applications always receive better ratings.
+
+Insight: Pricing alone is not a reliable indicator of user satisfaction.
+
+Business implication: Paid applications should justify their price through useful features, reliability, support, and a positive user experience.
+
+### 6. App Size Requires Context
+
+The size analysis compares application sizes with installs, but the relationship is not necessarily consistent across all applications.
+
+Insight: A larger application does not automatically attract more installs or receive better ratings.
+
+Business implication: Developers should balance functionality and media quality against download size and device-storage requirements.
+
+### 7. Application Updates Increased Over the Recorded Period
+
+The update-trend visualization shows a substantial increase in recorded update activity toward the end of the dataset's time range.
+
+Insight: The distribution of Last Updated dates indicates that update activity was concentrated in later recorded years.
+
+Business implication: Developers should maintain applications through bug fixes, compatibility updates, security improvements, and useful feature releases.
+
+Limitation: The dataset records the latest update date for each application, not a complete history of all releases. It therefore cannot establish the actual frequency of updates for individual applications.
 
 ---
 
@@ -179,3 +232,56 @@ Slicers: Category and Genre. Visuals: Top 5 installs by category, Top 10 install
 8. **Benchmark with volume:** compare against apps with 1,000+ reviews, not raw top-rated lists.
 
 ---
+
+## Challenges Faced
+
+### Data Cleaning
+
+The dataset contained text-formatted numeric fields, missing values, inconsistent size units, and a corrupted category record.
+
+Solution: Used Power Query to standardize fields and prepare them for analysis.
+
+### Application Size Conversion
+
+The Size column included values in both KB and MB, along with Varies with device.
+
+Solution: Separated the numeric values from their units and standardized usable sizes into MB.
+
+### Duplicate Handling
+
+Repeated app names made it necessary to distinguish between repeated names and exact duplicate records.
+
+Solution: Inspected repeated entries and considered the effect of duplicate records on distinct counts and aggregate measures.
+
+### Aggregation Accuracy
+
+Summing repeated values can inflate totals when records are duplicated or when a measure is intended to represent one value per app.
+
+Solution: Used appropriate aggregation methods, including SUM, AVERAGE, and DISTINCTCOUNT, depending on the metric being analyzed.
+
+### Visual Design
+
+Presenting multiple business questions without overcrowding the dashboard required careful selection of charts and KPIs.
+
+Solution: Separated executive-level KPIs from detailed analytical views and used interactive slicers to support exploration.
+
+### Analytical Limitations
+
+The dataset does not contain the text of individual user reviews or a full history of application updates.
+
+Solution: Limited conclusions to the available fields and avoided claiming that sentiment or historical update frequency could be measured directly.
+
+## Conclusion
+
+The App Insights Unlocked project demonstrates how Power BI can transform raw Google Play Store data into an interactive analytical report.
+
+By combining data preprocessing, KPI development, visual analysis, and business recommendations, the project explores application popularity, user ratings, pricing, size, and update patterns.
+
+The findings can help an app-development company identify promising categories, evaluate competing applications, improve user experience, and make more informed product decisions.
+
+The project also highlights an important analytical principle: ratings, installs, and reviews measure different aspects of application performance and should be interpreted together.
+
+## Project Resources
+GitHub Repository: App Insights — Power BI
+Dataset: Google Play Store Apps on Kaggle
+Primary Tool: Microsoft Power BI Desktop
