@@ -13,10 +13,10 @@ impact of app size and price on user reviews and installs.
 ##  Table of Contents
 1. [Business Problem](#-business-problem)
 2. [Dataset](#-dataset)
-3. [Tools & Skills](#-tools--skills)
-4. [Data Cleaning & Preprocessing](#-data-cleaning--preprocessing)
-5. [Data Model & DAX Measures](#-data-model--dax-measures)
-6. [Dashboard Overview](#-dashboard-overview)
+3. [Dashboard Overview](#-dashboard-overview)
+4. [Tools & Skills](#-tools--skills)
+5. [Data Cleaning & Preprocessing](#-data-cleaning--preprocessing)
+6. [Data Model & DAX Measures](#-data-model--dax-measures)
 7. [Key Insights](#-key-insights).
 8. [Key Recommendations](#-key-recommendations)
 9. [Challenges Faced](#-challenges-faced).
@@ -53,6 +53,29 @@ A mobile-app company has acquired Google Play Store data. Management wants to kn
 | Last Updated | Date of last update |
 | Current Ver | Current version |
 | Android Ver | Minimum Android version required |
+
+---
+## Dashboard Overview
+
+**Page 1: Application Insights (executive summary)**
+
+| KPI | Value |
+|---|---|
+| Total Installs | **75.12 bn** |
+| Total Reviews | **2.09 bn** |
+| Average Rating | **4.17** |
+| Total Apps | **8,174** |
+| Free / Paid split | **92.66% / 7.34%** |
+
+Slicers: Category and Genre. Visuals: Top 5 installs by category, Top 10 installed genres, Free vs Paid donut, Update trend.
+
+<img width="600" height="400" alt="Screenshot 2026-09-27 224608" src="https://github.com/user-attachments/assets/00a30a4e-cc3a-481f-b115-670949148e2e" />
+
+
+
+**Page 2: Deep dive.** Breakdown tree (Category → Genres), Reviews/Installs/Size table, Least-reviewed categories, Average installs by content rating.
+
+<img width="600" height="400" alt="Screenshot 2026-09-27 225115" src="https://github.com/user-attachments/assets/53f2dce3-00c0-4e45-97da-55d0a2e299ab" />
 
 ---
 
@@ -96,29 +119,6 @@ Avg Reviews Free   = CALCULATE ( AVERAGE ( googleplaystore[Reviews] ), googlepla
 Avg Reviews Paid   = CALCULATE ( AVERAGE ( googleplaystore[Reviews] ), googleplaystore[Type] = "Paid" )
 Unique Categories  = DISTINCTCOUNT ( googleplaystore[Category] )
 ```
-
-## Dashboard Overview
-
-**Page 1: Application Insights (executive summary)**
-
-| KPI | Value |
-|---|---|
-| Total Installs | **75.12 bn** |
-| Total Reviews | **2.09 bn** |
-| Average Rating | **4.17** |
-| Total Apps | **8,174** |
-| Free / Paid split | **92.66% / 7.34%** |
-
-Slicers: Category and Genre. Visuals: Top 5 installs by category, Top 10 installed genres, Free vs Paid donut, Update trend.
-
-<img width="600" height="400" alt="Screenshot 2026-09-27 224608" src="https://github.com/user-attachments/assets/00a30a4e-cc3a-481f-b115-670949148e2e" />
-
-
-
-**Page 2: Deep dive.** Breakdown tree (Category → Genres), Reviews/Installs/Size table, Least-reviewed categories, Average installs by content rating.
-
-<img width="600" height="400" alt="Screenshot 2026-09-27 225115" src="https://github.com/user-attachments/assets/53f2dce3-00c0-4e45-97da-55d0a2e299ab" />
-
 
 ---
 ## Key Insights
